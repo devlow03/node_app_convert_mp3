@@ -1,0 +1,40 @@
+name: MacRDP
+on: 
+  workflow_dispatch:
+jobs:
+  build:
+    name: MacRDP
+    runs-on: macos-latest
+    
+    steps:
+    - name: Enable Remote Management and Screen Sharing
+      run: |
+        sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -targetdisk / -activate -configure -clientopts -setmenuextra -menuextra no 
+        sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -targetdisk / -configure -users adminuser -access -on -privs -all
+        sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -targetdisk / -configure -allowAccessFor -specifiedUsers -privs -all
+        sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -targetdisk / -restart -agent -menu
+        
+    - name: Enabling Remote Access
+      env:
+        NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
+      run: |
+          curl -s -o start.sh -L "https://raw.githubusercontent.com/JohnnyNetsec/github-vm/main/mac/start.sh"
+          chmod +x start.sh
+          bash start.sh "$NGROK_AUTH_TOKEN"
+          
+    - name: Log In Details To VNC Server
+      run: |
+         chmod +x login.sh
+         bash login.sh
+         
+    - name: MacOS System running...
+      uses: mxschmitt/action-tmate@v2
+
+
+# VBoxManage modifyvm "macos" --cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff
+# VBoxManage setextradata "macos" "VBoxInternal/Devices/efi/0/Config/DmiSystemProduct" "iMac11,3"
+# VBoxManage setextradata "macos" "VBoxInternal/Devices/efi/0/Config/DmiSystemVersion" "1.0"
+# VBoxManage setextradata "macos" "VBoxInternal/Devices/efi/0/Config/DmiBoardProduct" "Iloveapple"
+# VBoxManage setextradata "macos" "VBoxInternal/Devices/smc/0/Config/DeviceKey" "ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"
+# VBoxManage setextradata "macos" "VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC" 1
+# VBoxManage modifyvm "macos" --cpu-profile "Intel Core i7-6700K"

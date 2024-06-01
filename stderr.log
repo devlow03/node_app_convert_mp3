@@ -1,0 +1,117 @@
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'express'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/thiendev/api.mp3converter.thiendev.shop/app.js:1:17)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+(node:3019748) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, open 'mp3/zoEtcR5EW08.mp3'
+(node:3019748) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:3019748) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:3019799) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, open 'mp3/zoEtcR5EW08.mp3'
+(node:3019799) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:3019799) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:3019799) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, open 'mp3/zoEtcR5EW08.mp3'
+(node:3019799) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
+Error converting video: Error: No video id found: Instance of 'Id'
+    at Object.exports.getVideoID.str [as getVideoID] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/ytdl-core/lib/url-utils.js:63:11)
+    at Function.exports.(anonymous function) [as getInfo] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/ytdl-core/lib/info.js:484:29)
+    at exports.convertMp3 (/home/thiendev/api.mp3converter.thiendev.shop/src/app/controllers/covert.mp3.controller.js:26:38)
+    at Layer.handle [as handle_request] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/index.js:284:15
+    at param (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/index.js:376:14)
+Error converting video: Error: No video id found: vFcbwZjR5GSA4zQYBx6r49p_PFQ
+    at Object.exports.getVideoID.str [as getVideoID] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/ytdl-core/lib/url-utils.js:63:11)
+    at Function.exports.(anonymous function) [as getInfo] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/ytdl-core/lib/info.js:484:29)
+    at exports.convertMp3 (/home/thiendev/api.mp3converter.thiendev.shop/src/app/controllers/covert.mp3.controller.js:26:38)
+    at Layer.handle [as handle_request] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/index.js:284:15
+    at param (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/index.js:376:14)
+Error converting video: Error: No video id found: 3idEzoTe9L9LaO_SXqecM-q-kKE
+    at Object.exports.getVideoID.str [as getVideoID] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/ytdl-core/lib/url-utils.js:63:11)
+    at Function.exports.(anonymous function) [as getInfo] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/ytdl-core/lib/info.js:484:29)
+    at exports.convertMp3 (/home/thiendev/api.mp3converter.thiendev.shop/src/app/controllers/covert.mp3.controller.js:26:38)
+    at Layer.handle [as handle_request] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/index.js:284:15
+    at param (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/index.js:376:14)
+Error converting video: Error: No video id found: vFcbwZjR5GSA4zQYBx6r49p_PFQ
+    at Object.exports.getVideoID.str [as getVideoID] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/ytdl-core/lib/url-utils.js:63:11)
+    at Function.exports.(anonymous function) [as getInfo] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/ytdl-core/lib/info.js:484:29)
+    at exports.convertMp3 (/home/thiendev/api.mp3converter.thiendev.shop/src/app/controllers/covert.mp3.controller.js:26:38)
+    at Layer.handle [as handle_request] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/index.js:284:15
+    at param (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/index.js:376:14)
+Error converting video: Error: No video id found: 3idEzoTe9L9LaO_SXqecM-q-kKE
+    at Object.exports.getVideoID.str [as getVideoID] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/ytdl-core/lib/url-utils.js:63:11)
+    at Function.exports.(anonymous function) [as getInfo] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/ytdl-core/lib/info.js:484:29)
+    at exports.convertMp3 (/home/thiendev/api.mp3converter.thiendev.shop/src/app/controllers/covert.mp3.controller.js:26:38)
+    at Layer.handle [as handle_request] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/index.js:284:15
+    at param (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/thiendev/nodevenv/api.mp3converter.thiendev.shop/10/lib/node_modules/express/lib/router/index.js:376:14)
+(node:90561) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, unlink 'src/resources/mp3/vVhKA9Av6vA.mp3'
+(node:90561) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:90561) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:90561) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, unlink 'src/resources/mp3/vjZsxtlJ-_M.mp3'
+(node:90561) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
+(node:90561) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, unlink 'src/resources/mp3/SPCcMxngATY.mp3'
+(node:90561) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+(node:90561) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, unlink 'src/resources/mp3/1Lh1E9voEsc.mp3'
+(node:90561) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 4)
+(node:90561) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, unlink 'src/resources/mp3/GDCOqJ8otOg.mp3'
+(node:90561) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 5)
+(node:90561) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, unlink 'src/resources/mp3/6eONmnFB9sw.mp3'
+(node:90561) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 6)
+(node:90561) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, unlink 'src/resources/mp3/C4QhZvTqhnI.mp3'
+(node:90561) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 7)
+(node:90561) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, unlink 'src/resources/mp3/mftSWpgydoo.mp3'
+(node:90561) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 8)
+(node:90561) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, unlink 'src/resources/mp3/6-LmZLjS5WI.mp3'
+(node:90561) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 9)
+(node:90561) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, unlink 'src/resources/mp3/7m8ek8D9me0.mp3'
+(node:90561) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 10)
+(node:90561) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, unlink 'src/resources/mp3/wssbBe_t-r4.mp3'
+(node:90561) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 11)
+(node:90561) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, unlink 'src/resources/mp3/JHSRTU31T14.mp3'
+(node:90561) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 12)
+(node:90561) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, unlink 'src/resources/mp3/2iidlwQ-NfU.mp3'
+(node:90561) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 13)
+(node:90561) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, unlink 'src/resources/mp3/B9PDYlaV84w.mp3'
+(node:90561) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 14)
+(node:90561) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, unlink 'src/resources/mp3/heMYSOZoT3c.mp3'
+(node:90561) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 15)
+(node:90561) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, unlink 'src/resources/mp3/faSVTByG0LQ.mp3'
+(node:90561) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 16)
+(node:90561) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, unlink 'src/resources/mp3/kqOybgUwTGY.mp3'
+(node:90561) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 17)
+(node:90561) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, unlink 'src/resources/mp3/UXqxTZ67Jio.mp3'
+(node:90561) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 18)
+(node:90561) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, unlink 'src/resources/mp3/Mb4xUU0utEI.mp3'
+(node:90561) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 19)
